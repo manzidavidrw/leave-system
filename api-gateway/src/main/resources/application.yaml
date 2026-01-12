@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: ${PORT}
 
 spring:
   application:
@@ -92,16 +92,10 @@ eureka:
 
 # JWT Configuration
 jwt:
-  secret: F9n6_3X2T_fZ8UQrpL2J_KPw5X3E7gD4M8n_vL5R_sA9qTz3V_yR4pWk1J7eD6m
-  expiration: 86400000
+  secret: ${SECRET}
+  expiration: ${EXPIRATION}
   refresh-expiration: 604800000
 
-# Redis Configuration
-spring.data.redis:
-  host: localhost
-  port: 6379
-  password:
-  timeout: 2000ms
 
 # Actuator Configuration
 management:
